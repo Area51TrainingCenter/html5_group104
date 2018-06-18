@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 2</title>
+</head>
+<body>
+
+
+<table border="1" cellpadding="10" cellspacing="10" bgcolor="#ccc">
+	<tr>
+		<th width="25%">id</th>
+		<th width="25%">nombre</th>
+		<th width="25%">apellido</th>
+		<th width="25%">dni</th>
+	</tr>
+	<tr >
+		<td>01</td>
+		<td>Alonso</td>
+		<td>Perez</td>
+		<td rowspan="3"  valign="middle">
+			<table border="1" cellpadding="10" cellspacing="10" bgcolor="#ccc">
+				<tr>
+					<th width="25%">id</th>
+					<th width="25%">nombre</th>
+					<th width="25%">apellido</th>
+					<th width="25%">dni</th>
+				</tr>
+				<tr >
+					<td align="center">01</td>
+					<td align="center" colspan="2">Alonso Perez</td>
+					<td>12345678</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3">02</td>
+					<td>Alonso</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>Alonso</td>
+					<td>Perez</td>
+					<td>12345678</td>
+				</tr>
+				<tr>
+					<td>04</td>
+					<td>Alonso</td>
+					<td>Perez</td>
+					<td>
+						<table border="1">
+							<tr><td>detalle1</td><td>detalle2</td></tr>
+							<tr><td>detalle3</td><td>detalle4</td></tr>
+							<tr><td>detalle5</td><td>detalle6</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>02</td>
+		<td>Alonso</td>
+		<td>Perez</td>
+	</tr>
+	<tr>
+		<td>03</td>
+		<td>Alonso</td>
+		<td>Perez</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formulario</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+	*{
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body{
+		font-family: 'Montserrat';
+		font-size: 14px;
+	}
+
+	section
+	{
+		padding: 30px 0px 30px 0px;
+		background-color: #ccc;
+	}
+
+	section article
+	{
+		background-color: #fff;
+		max-width: 768px;
+		margin: 0 auto;
+		padding: 30px 15px;
+	}
+
+	.form-group{
+		margin-bottom: 15px;
+	}
+
+	.form-group input,
+	.form-group select,
+	.form-group textarea{
+		border: 1px solid #ccc;
+		padding: 10px;
+		font-size: 17px;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.form-group input[type='radio'],
+	.form-group input[type='checkbox']{
+		border: 1px solid #ccc;
+		padding: 10px;
+		font-size: 17px;
+		width: auto;
+	}
+
+	.form-group-botones
+	{
+		text-align: center;
+	}
+
+	.form-group-botones .btn-reset,
+	.form-group-botones .btn-enviar
+	{
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 20px 50px;
+		margin: 0 15px;	
+		display: inline-block;
+		font-weight: 800;
+		border: none;
+	}
+
+	.form-group-botones .btn-reset
+	{
+		background-color: yellow;
+		color: red;
+	}
+
+	.form-group-botones .btn-enviar
+	{
+		background-color: red;
+	}
+
+	.form-group-botones .btn-reset:hover
+	{
+		background-color: white;
+		border: 1px solid yellow;
+		color: yellow;
+	}
+
+	.form-group-botones .btn-enviar:hover
+	{
+		background-color: white;
+		border: 1px solid red;
+		color: red;
+	}
+	</style>
+</head>
+<body>
+<section>
+	<article>
+		<form action="action.php" method="post"  enctype="multipart/form-data">
+			<div class="form-group">
+				<input type="hidden" name="codigo" value="codigo123455678"  >
+			</div>
+			<div class="form-group">
+				<input type="text" name="nombre"  id="nombre" value="alonso" readonly placeholder="Nombre" required >
+			</div>
+			<div class="form-group">
+				<input type="password" name="pass" id="passs" placeholder="Contraseña" required >
+			</div>
+			<div class="form-group">
+				<input type="number" name="numero" id="numero" placeholder="Numero" required >
+			</div>
+			<div class="form-group">
+				<input type="date" name="fecha" id="fecha" placeholder="Fecha" required >
+			</div>
+			<div class="form-group">
+				<input type="file" accept=".jpg, .jpeg, .png, .pdf"  name="curriculum" id="curriculum" placeholder="Curriculum" required >
+			</div>
+			<div class="form-group">
+				<input type="datetime-local" name="fecha_hora" id="fecha_hora">
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" id="email" placeholder="Email" required >
+			</div>
+			<div class="form-group">
+				<input type="radio" checked name="genero" value="h" required >Hombre
+				<input type="radio" name="genero" value="m" required >Mujer
+			</div>
+			<div class="form-group">
+				<input type="checkbox" checked name="terminos" value="1" required>Temrinos y condiciones
+				<input type="checkbox" name="politicas" value="1" required >Politicas de desarrollo
+			</div>
+			<div class="form-group">
+				<input type="checkbox" name="relacion[]" value="1">amistades
+				<input type="checkbox" name="relacion[]" value="2">amores
+				<input type="checkbox" name="relacion[]" value="3">choque fuga
+				<input type="checkbox" name="relacion[]" value="4">bandidas
+			</div>
+			<div class="form-group">
+				<select name="distritos" >
+					<option value="">-- Seleccione distrito --</option>
+					<optgroup label="cono norte">
+					    <option value="4">Los Olivos</option>
+					 </optgroup>
+					<optgroup label="cono sur">
+					    <option value="1">Chorrillos</option>
+					 </optgroup>
+					<option value="2" selected>Miraflores</option>
+					<option value="3">Lince</option>
+					<option value="5">Magdalena</option>
+					<option value="6">Jesus Maria</option>
+					<option value="7">Ate</option>
+					<option value="8">Surco</option>
+					<option value="9">Callao</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<textarea name="mensaje" id="mensaje" rows="10" placeholder="Mensaje" required ></textarea>
+			</div>
+			<div class="form-group-botones">
+				<input type="reset" class="btn-reset" name="reset" value="Reset">
+				<input type="submit" class="btn-enviar" name="btnenviar" value="Enviar">
+			</div>
+		</form>
+	</article>
+</section>
+</body>
+</html>
