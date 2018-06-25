@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	*{
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	section
+	{
+		width: 100%;
+	}
+
+	/*div.iframe,.posiciones
+	{
+		margin: 0 auto;
+		width: 1199px;
+		max-width: 1199px;
+		position: relative;
+	}*/
+
+	.contenedor-xixa
+	{
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	div.xixa{
+		padding-bottom: 56.25%;
+		width: 100%;
+		position: relative;
+	}
+
+	div.xixa .video
+	{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+	}
+
+	.cuadradito
+	{
+		position: fixed;
+		width: 100%;
+		height: 200px;
+		background-color: blue;
+		top: 0px;
+		margin: 0px;
+		left: 0px;
+	}
+
+	.pdf
+	{
+		height: 100vh;
+	}
+
+	</style>
+</head>
+<body>
+<section>
+<!--	<div class="video">
+		<video width="320" height="240" controls autoplay poster="img/poster.png">
+		  <source src="file/movie.mp4" type="video/mp4">
+		  <source src="file/movie.ogv" type="video/ogg">
+		  <source src="file/movie.webm" type="video/webm">
+		Your browser does not support the video tag.
+		</video>
+	</div> -->
+	<div class="contenedor-xixa">
+		<audio controls autoplay loop muted preload="none">
+			<source src="file/audio.ogg" type="audio/ogg">
+			<source src="file/audio.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+		<div class="xixa">
+			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bsQPrkzE7pc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<embed class="pdf" width="100%"  src="file/libro.pdf">
+	</div>
+
+	<!--<div class="posiciones">
+			<dir class="cuadradito"></dir>
+	</dir> -->
+</section>
+</body>
+</html>

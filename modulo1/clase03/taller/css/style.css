@@ -1,0 +1,108 @@
+*{
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #fff;
+	font-size: 14px;
+	font-family: "Ubuntu";
+}
+
+.container
+{
+	max-width: 1199px;
+	width: 1199px;
+	margin: 0 auto;
+	position: relative;
+	display: table;
+}
+
+.img-responsive
+{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+header.cabecera-principal
+{
+	padding: 15px 0px 15px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+header.cabecera-principal a.logo
+{
+	float: left;
+}
+
+header.cabecera-principal a.logo img
+{
+	height: 75px;
+	width: auto;
+}
+
+header.cabecera-principal ul.menu
+{
+	float: right;
+}
+
+header.cabecera-principal ul.menu li
+{
+	float: left;
+}
+
+header.cabecera-principal ul.menu li a
+{
+	color: #000;
+	text-decoration: none;
+	padding: 30px 15px;
+	display: block;
+}
+
+section
+{
+	width: 100%;
+	position: relative;
+}
+
+section.seccion-1
+{
+	height: calc(100vh - 108px);
+}
+
+section.seccion-1 .img-responsive
+{
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+}
+
+section.seccion-1 .contenedor-texto
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	margin-left: -250px;
+	height: 100px;
+	margin-top: -50px;
+	color: #fff;
+}
+
+section.seccion-1 .contenedor-texto h2
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+section.seccion-1 .contenedor-texto p
+{
+	text-align: center;
+	font-weight: 300;
+	font-size: 18px;
+}
