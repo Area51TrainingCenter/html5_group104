@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 }
 
+html{
+	min-height: 100%;
+}
+
+
+html,body
+{
+	height: 100%;
+}
+
 body{
 	background-color: #fff;
 	font-size: 14px;
