@@ -129,7 +129,26 @@ jQuery(document).ready(function(){
 
 	//acordion
 	jQuery(".box-titulo").click(function(){
-		var indicador = jQuery(".box-titulo").index(this);
-		jQuery(".box-contenido").eq(indicador).slideToggle();
+	//logica para abrir todos;
+	/*	var indicador = jQuery(".box-titulo").index(this);
+		jQuery(".box-contenido").eq(indicador).slideToggle();*/
+
+	//logiica para abrir y cerrar dejando un abierto	
+	/*	var indicador = jQuery(".box-titulo").index(this);
+		jQuery(".box-contenido").slideUp();
+		jQuery(".box-contenido").eq(indicador).slideToggle();*/
+
+
+	//logica abrir y cerrar
+	/*var indicador = jQuery(".box-titulo").index(this);
+		jQuery(".box-contenido").slideUp();
+		if(jQuery(this).hasClass("activo"))
+		{
+			jQuery(".box-titulo").removeClass("activo");
+		}else{
+			jQuery(".box-titulo").removeClass("activo");
+			jQuery(".box-titulo").eq(indicador).addClass("activo");
+			jQuery(".box-contenido").eq(indicador).slideDown();
+		}*/
 	});
 });
