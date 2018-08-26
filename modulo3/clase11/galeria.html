@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: arial;
+			background: #000;
+		}
+
+		.conteendorimagen
+		{
+			display: none;
+		}
+
+		.trama{
+			display: none;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			background-color: #fff;
+			opacity: .5;
+			z-index: 999;
+		}
+
+		.conteendorimagen
+		{
+			width: 75%;
+			position: fixed;
+			z-index: 9999;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.conteendorimagen img
+		{
+			width: 100%;
+		}
+
+		.conteendorimagen .cerrarlightbox
+		{
+		    position: absolute;
+		    top: -15px;
+		    right: -15px;
+		    color: #000;
+		    background: #fff;
+		    border-radius: 100%;
+		    text-align: center;
+		    width: 30px;
+		    padding: 6px 0px;
+		    text-decoration: none;
+		}
+
+		.container
+		{
+			width: 1199px;
+			margin: 0 auto;
+			display: table;
+		}
+
+		.columnas
+		{
+			float: left;
+			width: 25%;
+			position: relative;
+			padding-bottom: 25%;
+			display: block;
+		}
+
+		.columnas img
+		{
+			cursor: pointer;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			object-position: center;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			transition: all .3s ease-in;
+			display: block;
+		}
+
+		.columnas img.bn
+		{
+			filter: grayscale(1);			
+		}
+	</style>
+</head>
+<body>
+<section class="ejemplogaleria1">
+	<div class="container">
+		<div class="columnas">
+			<img src="img/paisaje1-t.jpg" data-img="img/paisaje1.jpg">
+		</div>
+		<div class="columnas">
+			<img src="img/paisaje2-t.jpg" data-img="img/paisaje2.jpg">
+		</div>
+		<div class="columnas">
+			<img src="img/paisaje3-t.jpg" data-img="img/paisaje3.jpg">
+		</div>
+		<div class="columnas">
+			<img src="img/paisaje4-t.jpg" data-img="img/paisaje4.jpg">
+		</div>
+	</div>
+</section>
+<div class="conteendorimagen">
+	<img src="">
+	<a href="#" class="cerrarlightbox bn">X</a>
+</div>
+<div class="trama"></div>
+<script src="js/jquery.js"></script>
+<script src="js/funciones.js"></script>
+</body>
+</html>

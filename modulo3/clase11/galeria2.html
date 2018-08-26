@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: arial;
+			background: #000;
+		}
+		
+		.container
+		{
+			width: 1199px;
+			margin: 0 auto;
+			display: table;
+		}
+
+		.columnas
+		{
+			float: left;
+			width: 33%;
+			position: relative;
+			padding-bottom: 33%;
+			display: block;
+		}
+
+		.columnas img
+		{
+			cursor: pointer;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			object-position: center;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			transition: all .3s ease-in;
+			display: block;
+		}
+
+		.lista-imagenes
+		{
+			display: none;
+		}
+
+		.ejemplogaleria2
+		{
+			padding: 30px 0px;
+		}
+
+		.galeria h1
+		{
+			color: #fff;
+		}
+
+
+		.rpta div
+		{
+			width: 33.33%;
+			padding-bottom: 33.33%;
+			float:left;
+			position: relative;
+		}
+
+
+		.rpta div img
+		{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: 100%; 
+		}
+
+
+		.rpta h3
+		{
+			position: absolute;
+			left: 15px;
+			bottom: 15px;
+			width: 50%;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+<section class="ejemplogaleria2">
+	<div class="container">
+		<div class="columnas">
+			<img src="img/paisaje1-t.jpg" data-indice="0">
+			<ul class="lista-imagenes lista0">
+				<li data-img="img/imagen1.jpg">Imagen 1 de galeria 1</li>
+				<li data-img="img/imagen2.jpg">Imagen 2 de galeria 1</li>
+				<li data-img="img/imagen3.jpg">Imagen 3 de galeria 1</li>
+			</ul>
+		</div>
+		<div class="columnas">
+			<img src="img/paisaje2-t.jpg" data-indice="1">
+			<ul class="lista-imagenes lista1">
+				<li data-img="img/imagen4.jpg">Imagen 1 de galeria 2</li>
+				<li data-img="img/imagen5.jpg">Imagen 2 de galeria 2</li>
+				<li data-img="img/imagen6.jpg">Imagen 3 de galeria 2</li>
+			</ul>
+		</div>
+		<div class="columnas">
+			<img src="img/paisaje3-t.jpg" data-indice="2">
+			<ul class="lista-imagenes lista2">
+				<li data-img="img/imagen7.jpg">Imagen 1 de galeria 3</li>
+				<li data-img="img/imagen8.jpg">Imagen 2 de galeria 3</li>
+				<li data-img="img/imagen9.jpg">Imagen 3 de galeria 3</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="galeria">
+	<div class="container">
+		<h1></h1>
+		<div class="rpta"></div>
+	</div>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/funciones.js"></script>
+</body>
+</html>

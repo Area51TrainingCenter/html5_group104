@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: arial;
+			background: #000;
+		}
+
+		a{
+			margin-top: 30px;
+			display: inline-block;
+			text-decoration: none;
+			color: #fff;
+			background: red;
+			padding: 10px 15px;
+		}
+
+		p{
+			color: #fff;
+		}
+
+		.texto
+		{
+			position: relative;
+		}
+
+		.cuadro
+		{
+			position: relative;
+			height: 100vh;
+			margin: 30px 0px 0px 0px;
+			width: 100%;
+		}
+
+		.cuadro .cuadrado
+		{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="texto">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<a href="#" class="changecss">Cambiar</a>
+	<a href="#" class="changeanimaciones">Animaciones</a>
+	<section class="cuadro">
+		<div class="cuadrado"></div>
+	</section>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/funciones.js"></script>
+</body>
+</html>
