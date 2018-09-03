@@ -1,0 +1,90 @@
+*{
+	box-sizing: border-box;
+}
+
+.container
+{
+	width: 1199px;
+	display: table;
+	position: relative;
+	padding: 0 15px;
+}
+
+.container .columna
+{
+	float: left;
+	display: block;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.container .columna form
+{
+	padding: 60px 30px;
+	background-color: #ccc;
+	width: 33.33%;
+	margin: 0 auto;
+}
+
+.container .columna form .form-group
+{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.container .columna form .form-group .form-control 
+{
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 30px;
+	height: 40px;
+	line-height: 1;
+}
+
+.container .columna form .form-group #enviar,
+.container .columna form .form-group #consultar 
+{
+	display: inline-block;
+	background-color: red;
+	color: #fff;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	line-height: 1;
+	width: 100%;
+	border:none;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.container .columna form .form-group:last-child
+{
+	margin-bottom: 0px;
+}
+
+.container .columna form .form-group p
+{
+	margin-bottom: 0px;
+}
+
+.container .columna #resultado
+{
+	padding: 60px 30px;
+	margin: 0 auto;
+	width: 33.33%;
+}
+
+.container .columna table
+{
+	width: 100%;
+	font-family: "arial";
+}
+
+.container .columna table tr:nth-child(odd)
+{
+	background-color: #eee;	
+}
+
+.container .columna table tr td
+{
+	padding: 10px 15px;
+}

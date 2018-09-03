@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="columna">
+				<form id="frmconsulta" onsubmit="return false" action="ac/consultar.php" method="post">
+					<div class="form-group">
+						<input class="form-control" type="text" name="busqueda" id="busqueda" placeholder="Ingrese su DNI">
+					</div>
+					<div class="form-group">
+						<input class="btnenviar" type="submit" id="consultar" value="Consultar">
+					</div>
+				</form>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="columna" >
+				<div id="resultado">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/funciones.js"></script>
+</body>
+</html>
